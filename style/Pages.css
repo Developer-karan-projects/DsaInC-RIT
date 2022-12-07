@@ -1,0 +1,20 @@
+.w3-sidebar {
+     width: 250px;
+}
+
+.w3-sidebar a {
+     display: block;
+     margin: 2px;
+     background-color: rgb(224, 224, 224);
+     padding: 4px;
+     text-decoration: none;
+}
+.CodeSection{
+     background-color: rgb(210, 255, 240);
+     margin: 10px;
+     padding: 0 12px;
+     border-radius: 4px;
+}
+header a{
+     text-decoration: none;
+}
