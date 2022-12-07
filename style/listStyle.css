@@ -1,0 +1,12 @@
+.DSATopicsLi{
+     background-color: white;
+     /* width: 100%; */
+     list-style-type: none ;
+     padding: 5px 30px;
+     margin: 7px 5px;
+}
+.DSATopicsLi a{
+     color: black;
+     text-decoration: none;
+
+}

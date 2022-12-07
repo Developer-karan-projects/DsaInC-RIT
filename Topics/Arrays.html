@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Arrays</title>
+     <link rel="stylesheet" href="../style/header.css">
+     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/base16/snazzy.min.css"  />
+</head>
+<style>
+     .w3-sidebar {
+          width: 250px;
+     }
+
+     .w3-sidebar a {
+          display: block;
+          margin: 2px;
+          background-color: rgb(224, 224, 224);
+          padding: 4px;
+          text-decoration: none;
+     }
+     .CodeSection{
+          background-color: rgb(210, 255, 240);
+          margin: 10px;
+          padding: 0 12px;
+          border-radius: 4px;
+     }
+</style>
+
+<body>
+     <header>
+          DataStructures With Krn
+     </header>
+     <div class="headerSpace"></div>
+     <!-- Sidebar -->
+     <div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="mySidebar">
+          <button onclick="w3_close()" class="w3-bar-item w3-large">Close &times;</button>
+          <a href="#" class="LengthArray" onclick="show(this)">Array Lenght</a>
+          <a href="#" class="TraversalArray" onclick="show(this)">Array Traversal</a>
+          <a href="#" class="InsertBegining" onclick="show(this)">Insertion at begining</a>
+          <a href="#" class="InsertMiddle" onclick="show(this)">Insertion at middle</a>
+          <a href="#" class="InsertEnd" onclick="show(this)">Insertion at last</a>
+          <a href="#" class="Delete" onclick="show(this)">Deletion</a>
+          <a href="#" class="Serch" onclick="show(this)">serching</a>
+          <a href="#" class="Sort" onclick="show(this)">Sorting</a>
+          <!-- <a href="#" class="">Link 3</a>
+     <a href="#" class="">Link </a> -->
+     </div>
+
+     <!-- Page Content -->
+     <div class="w3-teal">
+          <button class="w3-button w3-teal w3-xlarge" onclick="w3_open()">☰</button>
+          <span>Arrays</span>
+     </div>
+     <div class="CodeSection LengthArraySection" style="display:block">
+          <h3>Length of Array</h3>
+          <div class="algorithm">
+               <h4>Algorithm</h4>
+<pre><code class="c">Step 1 :- Create a array 
+Step 2 :- create a varriable to store array Length
+step 3 :- divide whole array with any of given element
+step 4 :- print the divided element
+</code></pre>
+<br>
+          </div>
+          <div class="codeInput">
+<pre><code class="c">// C program to traverse the array
+#include &lt;stdio.h>
+// Function to find Length of the array
+int main()
+{
+    int arr[] = { 2, -1, 5, 6, 0, -3 };
+    int n = sizeof(arr) / sizeof(arr[0]);
+    pfintf("Length :- %d",n);
+    return 0;
+}</code></pre>
+          </div>
+          <div class="codeOutput">
+               <h4>Output :-</h4>
+<pre><code class="c">Length :- 6
+</code>
+</pre>
+          </div>
+          <div class="adsUnit"></div>
+     </div>
+     <div class="CodeSection TraversalArraySection" style="display:none">
+          <h3>Traversal of link list</h3>
+          <div class="algorithm">
+               <h4>Algorithm</h4>
+          </div>
+          <div class="codeInput">
+<pre><code class="c">// C program to traverse the array
+#include &lt;stdio.h>
+// Function to traverse and print the array
+void printArray(int* arr, int n)
+{
+    int i;
+ 
+    printf("Array: ");
+    for (i = 0; i < n; i++) {
+        printf("%d ", arr[i]);
+    }
+    printf("\n");
+}
+ 
+// Driver program
+int main()
+{
+    int arr[] = { 2, -1, 5, 6, 0, -3 };
+    int n = sizeof(arr) / sizeof(arr[0]);
+ 
+    printArray(arr, n);
+ 
+    return 0;
+}</code></pre>
+          </div>
+          <div class="codeOutput">
+               <h4>Output :-</h4>
+<pre><code class="c">Array: 2 -1 5 6 0 -3
+</code>
+</pre>
+          </div>
+          <div class="adsUnit"></div>
+     </div>
+     <div class="CodeSection InsertBeginingSection" style="display:none">
+          <h3>Heading</h3>
+          <div class="algorithm">insert</div>
+          <div class="codeInput">jaks</div>
+          <div class="codeOutput">asklasi</div>
+          <div class="adsUnit"></div>
+     </div>
+     <div class="CodeSection InsertMiddleSection" style="display:none">
+          <h3>Heading</h3>
+          <div class="algorithm">middle</div>
+          <div class="codeInput">jaks</div>
+          <div class="codeOutput">asklasi</div>
+          <div class="adsUnit"></div>
+     </div>
+     <div class="CodeSection InsertEndSection" style="display:none">
+          <h3>Heading</h3>
+          <div class="algorithm">end</div>
+          <div class="codeInput">jaks</div>
+          <div class="codeOutput">asklasi</div>
+          <div class="adsUnit"></div>
+     </div>
+     <div class="CodeSection DeleteSection" style="display:none">
+          <h3>Heading</h3>
+          <div class="algorithm">delete</div>
+          <div class="codeInput">jaks</div>
+          <div class="codeOutput">asklasi</div>
+          <div class="adsUnit"></div>
+     </div>
+     <div class="CodeSection SerchSection" style="display:none">
+          <h3>Heading</h3>
+          <div class="algorithm">Serch</div>
+          <div class="codeInput">jaks</div>
+          <div class="codeOutput">asklasi</div>
+          <div class="adsUnit"></div>
+     </div>
+     <div class="CodeSection SortSection" style="display:none">
+          <h3>Heading</h3>
+          <div class="algorithm">sort</div>
+          <div class="codeInput">jaks</div>
+          <div class="codeOutput">asklasi</div>
+          <div class="adsUnit"></div>
+     </div>
+     <script>
+          function hideOther(){
+               let allCodeSection = document.querySelectorAll(".CodeSection")
+     allCodeSection.forEach(section=>{
+          section.style.display = "none"
+     })
+          }
+          function w3_open() {
+               document.getElementById("mySidebar").style.display = "block";
+          }
+
+          function w3_close() {
+               document.getElementById("mySidebar").style.display = "none";
+          }
+          function show(element) {
+               let link = element;
+               let linkValue = link.classList.value
+               let sectionName = linkValue + "Section"
+               let SectionElement = document.getElementsByClassName(sectionName)[0]
+               hideOther();
+               SectionElement.style.display = "block";
+               document.getElementById("mySidebar").style.display = "none";
+               console.log(link.classList.value)
+               console.log(sectionName)
+               console.log(SectionElement)
+          }
+     </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+     
+</body>
+
+</html>
